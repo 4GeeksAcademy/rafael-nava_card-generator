@@ -24,26 +24,26 @@ window.onload = function() {
     "K"
   ];
   //obtener las referencias de mi html donde afectare su valor
-  let arriba = document.querySelector("#arriba");
-  let centro = document.querySelector("#centro");
-  let abajo = document.querySelector("#abajo");
+  let cartaArriba = document.querySelector("#cartaArriba");
+  let cartaCentro = document.querySelector("#cartaCentro");
+  let cartaAbajo = document.querySelector("#cartaAbajo");
   let boton = document.querySelector(".boton");
 
   //crear una funcion que genere valores aleatoreos
   function generarcarta() {
     //esto sera igual = a mi arreglo "palos"[posicion(dada por math random por el tamaño del arreglo)]
-    let palosrandom = palos[Math.floor(Math.random() * palos.length)];
-    let valoresrandom = valores[Math.floor(Math.random() * valores.length)];
+    let palosRandom = palos[Math.floor(Math.random() * palos.length)];
+    let valoresRandom = valores[Math.floor(Math.random() * valores.length)];
     // si palosrandom es igual a corazon o diamante entonces afecta el color del texto a rojo
-    if (palosrandom === "♥" || palosrandom === "♦") {
-      card.style.color = "red";
-    } else if (palosrandom === "♠" || palosrandom === "♣") {
-      card.style.color = "black";
+    if (palosRandom === "♥" || palosRandom === "♦") {
+      carta.style.color = "red";
+    } else if (palosRandom === "♠" || palosRandom === "♣") {
+      carta.style.color = "black";
     }
     // el contenido de la referencia traida de mi html sera igual al resultado de palosrandom
-    arriba.textContent = palosrandom;
-    centro.textContent = valoresrandom;
-    abajo.textContent = palosrandom;
+    cartaArriba.textContent = palosRandom;
+    cartaCentro.textContent = valoresRandom;
+    cartaAbajo.textContent = palosRandom;
   }
   // el boton de mi html activara la funcion generarcarta al hacer click
   boton.addEventListener("click", generarcarta);

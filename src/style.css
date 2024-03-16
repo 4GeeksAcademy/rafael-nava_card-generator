@@ -20,7 +20,7 @@ body::before {
   z-index: -1; /* Coloca el pseudo-elemento detrás del contenido del cuerpo */
 }
 
-#card {
+#carta {
   border: 1px solid grey;
   width: 300px;
   height: 450px;
@@ -32,7 +32,6 @@ body::before {
 }
 #titulo {
   margin: auto;
-  /* width: 300px; */
   text-align: center;
   font-size: 60px;
   background: #000000;
@@ -55,25 +54,22 @@ body::before {
   border-radius: 5px;
   padding: 5px;
 }
-#arriba {
+#cartaArriba {
   height: 25%;
   border-radius: 20px 20px 0px 0px;
-  /* background: blue; */
   font-size: 100px;
   text-align: left;
 }
-#centro {
+#cartaCentro {
   height: 50%;
-  /* background: red; */
   font-size: 120px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-#abajo {
+#cartaAbajo {
   height: 25%;
   border-radius: 20px 20px 0px 0px;
-  /* background: green; */
   font-size: 100px;
   text-align: left;
   transform: rotate(180deg);
